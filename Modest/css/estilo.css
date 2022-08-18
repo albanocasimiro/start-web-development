@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+*{
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1d2126;
+  width: 100%;
+  height: 81px;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu ul li{
+  padding: 5px;
+}
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+.menu ul li:nth-child(1){
+  border: solid 2px #23b7a4;
+  border-radius: 5px;
+  padding: 7px;
+}
+.menu ul li:nth-child(5){
+  border: solid 2px #5b6168;
+  padding: 7px;
+  border-radius: 5px;
+}
+/*formatando a area do banner*/
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background: url('../img/bg.png');
+  background-position: center;
+  background-size: cover;
+}
+.banner div{
+  margin-left: 250px;
+  width: 664px;
+}
+.banner div h1{
+  color: white;
+  margin-bottom: 20px;
+}
+.banner div p{
+  margin-bottom: 40px;
+}
+.banner div a{
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 10px;
+  background-color: #23b7a4;
+  border-radius: 5px;
+}
+.banner div a:nth-child(2){
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px;
+  text-align: center;
+}
+/*formatando a parte do about*/
+.about{
+  display: flex;
+  width:1164px;
+  height: 600px;
+  margin: 10px auto;
+  border-bottom: solid 3px #e1e6ea;
+}
+.about div{
+  width: 500px;
+  padding: 20px;
+}
+.about div h1{
+  margin-bottom: 30px;
+  border-left: solid 8px #e1e6ea;
+}
+.about div p{
+  margin-bottom: 30px;
+  text-align: left;
+}
+.about ul{
+  list-style: none;
+}
+.about ul li{
+  width: 600px;
+  align-items: center;
+  display: flex;
+}
+.about ul li h2{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.about ul li span{
+  margin-top: -50px;
+  padding: 20px;
+  background-color: #23b7a4;
+}
+.about ul li:nth-child(2){
+  margin-top: -80px;
+}
+.about ul li:nth-child(3){
+  margin-top: -80px;
+}
+/*formatando a parte do time*/
+.nosso-time{
+  max-width:1164px;
+  height: 600px;
+  margin: auto;
+}
+.agrupar{
+  display: flex;
+}
+.nosso-time h1{
+  margin-bottom: 30px;
+  border-left: solid 8px #e1e6ea;
+}
+.nosso-time figure{
+  margin: 15px;
+  position: relative;
+  width:265px;
+  background-color: #e1e6ea;
+}
+.nosso-time figure legend{
+  width: 265px;
+  padding: 10px;
+  color: #9ca2a7;
+}
+.nosso-time figure legend h2{
+  font-weight: bold;
+}
+.nosso-time figure div{
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cbcece6c;
+  position: absolute;
+}
+.nosso-time figure div img{
+  margin:8px;
+}
+.nosso-time figure div:hover{
+  opacity: 1;
+  transition: .5s;
+}
+.nosso-time figure:hover{
+  transition: .5s;
+  background-color: #3a454d;
+}
+/*formatando a parte do work*/
+.work{
+  width: 100%;
+  background-color: #3a454d;
+}
+.work h1{
+  border-left: solid 8px #e1e6ea;
+  margin-left: 95px;
+}
+.work ul{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.work ul li{
+  cursor: pointer;
+  margin:20px;
+}
+.work ul li figure{
+  position: relative;
+}
+.work ul li figure figcaption{
+  opacity: 0;
+  margin-top: -5px;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: #292f36;
+}
+.work ul li figure:hover figcaption{
+  opacity: 1;
+  transition: .5s;
+}
+
+/*formatando a parte de servi;os */
+.servicos{
+  width: 1164px;
+  margin: auto;
+}
+.servicos h1{
+  margin-top: 20px;
+  border-left: solid 8px #e1e6ea;
+  margin-left: 25px;
+}
+.servicos ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+.servicos ul li{
+  margin: 10px;
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+  width: 261px;
+  height: 271px;
+}
+.servicos ul li img{
+  margin: 25px;
+}
+.servicos ul li h2{
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.servicos ul li p{
+  text-align: center;
+  color: #8d8f92;
+}
+/*formatando a parte de destaques */
+.destaques{
+  width: 100%;
+  background-color: #3a454d;
+}
+.destaques h1{
+  border-left: solid 8px #e1e6ea;
+  margin-left: 90px;
+}
+.destaques ul{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  color: white;
+  list-style:none;
+}
+.destaques ul li{
+  margin: 20px;
+  width: 362px;
+  height: 462px;
+}
+.destaques ul li figure h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*formatando a area de contactos*/
+.contactos{
+  position: relative;
+  max-width: 100%;
+}
+.contactos h1{
+  margin-bottom: 30px;
+  margin-left: 50px;
+  border-left: solid 8px #e1e6ea;
+}
+.contactos form{
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  width: 568px;
+  height:364px ;
+  padding: 15px;
+  background-color: white;
+}
+.contactos form .input{
+  width: 238px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #eaeef1;
+}
+.texto{
+  background-color: #eaeef1;
+  padding: 5px;
+  width: 499px;
+  height: 200px;
+  margin: 10px;
+  border: none;
+}
+.contactos form button{
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #23b7a4;
+  margin: 10px;
+  padding: 10px;
+}
+.contactos div{
+  width:540px;
+  height:280px;
+  margin-left: 50px;
+}
+.contactos div h2{
+  color: #b1b2b4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contactos div p{
+  color: #b0b1b3;
+  margin-bottom:20px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  margin-top: 18px;
+  background-color: #3a454d;
+  height: 50px;
+}
