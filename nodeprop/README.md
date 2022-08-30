@@ -2,4 +2,4 @@
 ##NODEPROP
 
 
-#NÃO É RESPONSIVO
+
